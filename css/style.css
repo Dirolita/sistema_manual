@@ -12,27 +12,42 @@ body{
     font-size: 16;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+#body-index{
+    background-color: var(--blue);
+}
 .index1{
+    padding: 1rem;
+    width: 60%;
+    margin: 5rem auto;
     display: flex;
     align-items:center;
     justify-content: center;
-    box-shadow: 1px 1px 2px  var(--gray);
+    box-shadow: 3px 3px 7px  var(--gray);
+    background-color: var(--light);
+    border-radius: 5px;
 }
 .index1 img{
     margin-left: 3em;
 }
-
-.index1 button{
-    background-color: var(--green);
-    padding: 10px;
-    border: none;
-    box-shadow: 1px 1px 2px  var(--gray);
+.boton-index {
+    display: flex;
+    justify-content: center;
 }
-.index1 a{
+
+.boton-index a{
     text-decoration: none;
     color: white;
     
 }
+.boton-index button{
+    background-color: var(--green);
+    padding: 1rem;
+    border: none;
+    box-shadow: 1px 1px 2px  var(--gray);
+    
+}
+
+
 .barra{
     background-color: var(--blue)}
 .padre {
@@ -97,7 +112,8 @@ nav#superior button a{
 
 }
 .menufijo{
-    
+    height: 40px;
+   
     background-color:var(--green);
     width: 90%;
     position: fixed;
@@ -107,9 +123,11 @@ nav#superior button a{
     
     
 }
-.menufijo h1{
-    margin: 4px;
+.menufijo h3{
+    margin-block-start:10px;
+    margin-block-end: 0;
 }
+
 .submenu{
     padding-top:30px;
 }
@@ -123,27 +141,31 @@ nav#superior button a{
     ...
 }
 footer{
+    bottom: 0%;
     display: flex;
     justify-content: center;
     padding-top: 1em;
     background-color: var(--gray);
-    height: 100%;
+    height: 3rem;
     color: white;
     
 
 }
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px){
     .index1{
-        
         display: flex;
         flex-direction: column;
         padding: 30px;
     }
-    .index1 button{
-        margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .index1{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
     }
+    
     .index1 img{
         margin-top: 20px;
         width: 90%;
@@ -182,6 +204,10 @@ footer{
         
     .menufijo{
          visibility: hidden;
+    }
+    .icono img{
+        width:5%;
+     
     }
 
 }
